@@ -1,0 +1,36 @@
+/*Write a C program to input number of days from user and convert it to years, weeks and days.*/
+
+// year= 365 days
+// month= 30 days
+// week= 7 days
+
+////////////////////////////
+/// By Lindsay Voglewede ///
+////////////////////////////
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //Declare variables
+    float days=0.0000;      
+    float years=0.0000;
+    float months=0.0000;
+    float weeks=0.0000;
+
+    //Ask User for Input
+    printf("Enter amount of days\n");
+    scanf("%f",&days);
+
+    //Mathematical Operations
+    years=days/365;
+    months=days/30.417;
+    weeks=days/7;
+
+    //Output
+    printf("Amount of years is= %f\n",years);
+    printf("Amount of months is= %f\n",months);
+    printf("Amount of weeks is= %f\n",weeks);
+    return 0;
+}
